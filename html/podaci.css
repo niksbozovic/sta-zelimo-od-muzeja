@@ -383,8 +383,4 @@ a {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  .page-number {
-  	grid-template-columns: repeat(4, 1fr);
-  	gap: 20px;
-  }
 }
