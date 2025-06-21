@@ -266,7 +266,7 @@ body {
 }
 
 .question p {
-	width: fit-content;
+	width: 30vw;
   text-transform: uppercase;
 	height: auto;
 	z-index: 0;

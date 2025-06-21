@@ -159,14 +159,14 @@ body {
 }
 
 .question p {
-	width: fit-content;
+	width: 30vw;
 	height: auto;
 	z-index: 0;
 	font-family: "PPFractionMono";
 	color: #000;
-	font-size: 0.8	rem;
+	font-size: 0.8rem;
 	letter-spacing: 0em;
-	text-align: center;
+	text-align: right;
 	line-height: 1rem;
 	font-feature-settings: normal;
 	position: relative;
