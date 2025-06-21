@@ -232,9 +232,9 @@ a {
 @media (max-width: 800px) {
 
   .page-number .number {
-		width: 12px;
-		height: 12px;
-		padding: 6px;
+		width: 14px;
+		height: 14px;
+		padding: 7px;
 	}
 
 	.page-number .number p {
