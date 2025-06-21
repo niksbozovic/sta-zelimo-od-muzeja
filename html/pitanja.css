@@ -1,0 +1,230 @@
+@font-face {
+  font-family: PPFractionMono;
+  src: url('../fonts/PPFraktionMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-number {
+	height: fit-content;
+	position: fixed;
+	top: 3vh;
+	left: 3vw;
+	z-index: 100;
+}
+
+.page-number-cont {
+	display: grid;
+ 	grid-template-columns: repeat(2, auto);
+  	gap: 10px;
+	width: fit-content;
+	height: fit-content;
+	position: relative;
+}
+
+.page-number .number {
+	border-radius: 50px;
+	background: #F5F5F5;
+	width: 20px;
+	height: 20px;
+	display: grid;
+	place-items: center;
+	padding: 10px;
+}
+
+.page-number .number p {
+	width: fit-content;
+	height: auto;
+	z-index: 0;
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: 0.5rem;
+	letter-spacing: 0em;
+	text-align: center;
+	line-height: 0rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.page-number .number-hl {
+	border-radius: 50px;
+	background: #000;
+	width: 20px;
+	height: 20px;
+	display: grid;
+	gap: 4px;
+	place-items: center;
+	padding: 10px;
+}
+
+.page-number .number-hl p {
+	width: fit-content;
+	height: auto;
+	z-index: 0;
+	font-family: "PPFractionMono";
+	color: #F5F5F5;
+	font-size: 0.5rem;
+	letter-spacing: 0em;
+	text-align: center;
+	line-height: 0rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.period {
+	height: fit-content;
+	position: fixed;
+	top: 3vh;
+	right: 3vw;
+}
+
+.period-cont {
+	display: grid;
+ 	grid-template-columns: repeat(3, auto);
+  	gap: 10px;
+	width: fit-content;
+	height: fit-content;
+	position: relative;
+}
+
+.period .period-text {
+	border-radius: 50px;
+	background: #F5F5F5;
+	width: fit-content;
+	height: 20px;
+	display: grid;
+	place-items: center;
+	padding: 10px 20px;
+}
+
+.period .period-text p {
+	width: fit-content;
+	height: auto;
+	z-index: 0;
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: 0.6rem;
+	letter-spacing: 0em;
+	text-align: center;
+	line-height: 0rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.period .period-text-hl {
+	border-radius: 50px;
+	background: #000;
+	width: fit-content;
+	height: 20px;
+	display: grid;
+	gap: 4px;
+	place-items: center;
+	padding: 10px 20px;
+}
+
+.period .period-text-hl p {
+	width: fit-content;
+	height: auto;
+	z-index: 0;
+	font-family: "PPFractionMono";
+	color: #F5F5F5;
+	font-size: 0.6rem;
+	letter-spacing: 0em;
+	text-align: center;
+	line-height: 0rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.question {
+	height: fit-content;
+	position: fixed;
+	bottom: 3vh;
+	right: 3vw;
+}
+
+.question p {
+	width: fit-content;
+	height: auto;
+	z-index: 0;
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: 0.8rem;
+	letter-spacing: 0em;
+	text-align: center;
+	line-height: 1rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.description {
+	height: calc(100vh - 12vh);
+  width: 100vw;
+  display: grid;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 25vh 5vw 25vh 5vw;
+}
+
+.description-cont {
+  display: grid;
+ 	grid-template-columns: repeat(2, auto);
+  gap: 2vh;
+	grid-row-gap: 0.2vh;
+  width: 90%;
+  max-width: 40vw;
+  margin: 0 auto;
+  height: fit-content;
+	position: relative;
+	place-items: center;
+}
+
+.description h1{
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: 1.2rem;
+	letter-spacing: 0em;
+	text-align: left;
+	line-height: 2rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.description .description-list h1{
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: 1.2rem;
+	letter-spacing: 0em;
+	text-align: left;
+	line-height: 2rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.description p{
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: .8rem;
+	letter-spacing: 0em;
+	text-align: left;
+	line-height: 2rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+a {
+	color: 5FEFB5;
+}

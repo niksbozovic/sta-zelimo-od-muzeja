@@ -1,0 +1,386 @@
+@font-face {
+  font-family: PPFractionMono;
+  src: url('../fonts/PPFraktionMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+  width: 100vw;
+  overflow: scroll;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-number {
+	height: fit-content;
+	position: fixed;
+	top: 3vh;
+	left: 3vw;
+}
+
+.page-number-cont {
+	display: grid;
+ 	grid-template-columns: repeat(2, auto);
+  	gap: 10px;
+	width: fit-content;
+	height: fit-content;
+	position: relative;
+}
+
+.page-number .number {
+	border-radius: 50px;
+	background: #F5F5F5;
+	width: 20px;
+	height: 20px;
+	display: grid;
+	place-items: center;
+	padding: 10px;
+}
+
+.page-number .number p {
+	width: fit-content;
+	height: auto;
+	z-index: 0;
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: 0.5rem;
+	letter-spacing: 0em;
+	text-align: center;
+	line-height: 0rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.page-number .number-hl {
+	border-radius: 50px;
+	background: #000;
+	width: 20px;
+	height: 20px;
+	display: grid;
+	gap: 4px;
+	place-items: center;
+	padding: 10px;
+}
+
+.page-number .number-hl p {
+	width: fit-content;
+	height: auto;
+	z-index: 0;
+	font-family: "PPFractionMono";
+	color: #F5F5F5;
+	font-size: 0.5rem;
+	letter-spacing: 0em;
+	text-align: center;
+	line-height: 0rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.period {
+	height: fit-content;
+	position: fixed;
+	top: 3vh;
+	right: 3vw;
+}
+
+.period-cont {
+	display: grid;
+ 	grid-template-columns: repeat(3, auto);
+  	gap: 10px;
+	width: fit-content;
+	height: fit-content;
+	position: relative;
+}
+
+.period .period-text {
+	border-radius: 50px;
+	background: #F5F5F5;
+	width: fit-content;
+	height: 20px;
+	display: grid;
+	place-items: center;
+	padding: 10px 20px;
+}
+
+.period .period-text p {
+	width: fit-content;
+	height: auto;
+	z-index: 0;
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: 0.6rem;
+	letter-spacing: 0em;
+	text-align: center;
+	line-height: 0rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.period .period-text-hl {
+	border-radius: 50px;
+	background: #000;
+	width: fit-content;
+	height: 20px;
+	display: grid;
+	gap: 4px;
+	place-items: center;
+	padding: 10px 20px;
+}
+
+.period .period-text-hl p {
+	width: fit-content;
+	height: auto;
+	z-index: 0;
+	font-family: "PPFractionMono";
+	color: #F5F5F5;
+	font-size: 0.6rem;
+	letter-spacing: 0em;
+	text-align: center;
+	line-height: 0rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.legend {
+	height: fit-content;
+	position: fixed;
+	bottom: 3vh;
+	left: 3vw;
+}
+
+.legend-cont {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	width: fit-content;
+	height: fit-content;
+	position: relative;
+}
+
+.legend-item {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.legend .legend-button {
+	border-radius: 50px;
+	width: 10px;
+	height: 10px;
+	display: grid;
+	place-items: center;
+	padding: 10px;
+}
+
+.button-red {
+	background: #EF5F5F;
+}
+.button-yellow {
+	background: #EFC95F;
+}
+.button-green {
+	background: #8FEF5F;
+}
+.button-blue {
+	background: #5FD7EF;
+}
+.button-purple {
+	background: #8A8AE3;
+}
+.button-pink {
+	background: #EF5FBA;
+}
+
+.legend .legend-button p {
+	width: fit-content;
+	height: auto;
+	z-index: 0;
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: 0.5rem;
+	letter-spacing: 0em;
+	text-align: center;
+	line-height: 0rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.legend .legend-text p {
+	width: fit-content;
+	height: auto;
+	z-index: 0;
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: 0.8rem;
+	letter-spacing: 0em;
+	text-align: center;
+	line-height: 0rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.data {
+	display: grid;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: auto;
+	margin: auto;
+}
+
+.data-cont {
+	display: grid;
+ 	grid-template-columns: repeat(5, auto);
+  	gap: 10px;
+	width: fit-content;
+	height: fit-content;
+	position: relative;
+}
+
+.data-item {
+	display: flex;
+	gap: 10px;
+}
+
+.data .data-button {
+	border-radius: 50px;
+	width: 30px;
+	height: 30px;
+	display: grid;
+	place-items: center;
+}
+
+.question {
+	height: fit-content;
+	position: fixed;
+	bottom: 3vh;
+	right: 3vw;
+}
+
+.question p {
+	width: fit-content;
+  text-transform: uppercase;
+	height: auto;
+	z-index: 0;
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: 0.8rem;
+	letter-spacing: 0em;
+	text-align: right;
+	line-height: 1rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.description {
+	height: fit-content;
+  width: 100vw;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 10vh 0 10vh 0;
+}
+
+.description-cont {
+  display: grid;
+  gap: 0vh;
+  width: 90%;
+  max-width: 40vw;
+  margin: 0 auto;
+  height: fit-content;
+	position: relative;
+	place-items: left;
+}
+
+.description h1{
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: 1.2rem;
+	letter-spacing: 0em;
+	text-align: left;
+	line-height: 2rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.description .description-list h1{
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: 1.2rem;
+	letter-spacing: 0em;
+	text-align: left;
+	line-height: 1rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.description p{
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: .8rem;
+	letter-spacing: 0em;
+	text-align: left;
+	line-height: 2rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.answers {
+	height: fit-content;
+  width: 100vw;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 5vh 0vw 20vh 0;
+}
+
+.answers-cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 90%;
+  max-width: 60vw;
+  margin: 0 auto;
+  height: fit-content;
+	position: relative;
+	place-items: center;
+}
+
+.answers h1{
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: 1.2rem;
+	letter-spacing: 0em;
+	text-align: left;
+	line-height: 2rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.answers p{
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: .8rem;
+	letter-spacing: 0em;
+	text-align: left;
+	line-height: 2rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+a {
+	color: 5FEFB5;
+}
+
+@media (max-width: 800px) {
+  .answers-cont {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
