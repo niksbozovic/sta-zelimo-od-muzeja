@@ -172,11 +172,11 @@ body {
 
 .legend .legend-button {
 	border-radius: 50px;
-	width: 10px;
-	height: 10px;
+	width: 5px;
+	height: 5px;
 	display: grid;
 	place-items: center;
-	padding: 10px;
+	padding: 5px;
 }
 
 .button-red {
@@ -204,7 +204,7 @@ body {
 	z-index: 0;
 	font-family: "PPFractionMono";
 	color: #000;
-	font-size: 0.5rem;
+	font-size: 0.4rem;
 	letter-spacing: 0em;
 	text-align: center;
 	line-height: 0rem;
@@ -218,7 +218,7 @@ body {
 	z-index: 0;
 	font-family: "PPFractionMono";
 	color: #000;
-	font-size: 0.8rem;
+	font-size: 0.6rem;
 	letter-spacing: 0em;
 	text-align: center;
 	line-height: 0rem;
@@ -285,7 +285,7 @@ body {
   width: 100vw;
   overflow-y: auto;
   box-sizing: border-box;
-  padding: 10vh 0 10vh 0;
+  padding: 10vh 0 0vh 0;
 }
 
 .description-cont {
@@ -302,7 +302,7 @@ body {
 .description h1{
 	font-family: "PPFractionMono";
 	color: #000;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	letter-spacing: 0em;
 	text-align: left;
 	line-height: 2rem;
@@ -313,7 +313,7 @@ body {
 .description .description-list h1{
 	font-family: "PPFractionMono";
 	color: #000;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	letter-spacing: 0em;
 	text-align: left;
 	line-height: 1rem;
@@ -337,7 +337,7 @@ body {
   width: 100vw;
   overflow-y: auto;
   box-sizing: border-box;
-  padding: 5vh 0vw 20vh 0;
+  padding: 0vh 0vw 10vh 0;
 }
 
 .answers-cont {
@@ -345,7 +345,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   width: 90%;
-  max-width: 60vw;
+  max-width: 40vw;
   margin: 0 auto;
   height: fit-content;
 	position: relative;
@@ -383,4 +383,51 @@ a {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+  
+  .answers p {
+  	font-size: 0.6rem;
+  	line-height: 1rem;
+  }
+
+  .page-number .number {
+		width: 12px;
+		height: 12px;
+		padding: 6px;
+	}
+
+	.page-number .number p {
+		font-size: 0.4rem;
+	}
+
+  .page-number .number-hl {
+		width: 12px;
+		height: 12px;
+		padding: 6px;
+	}
+
+	.page-number .number-hl p {
+		font-size: 0.4rem;
+	}
+
+	.period .period-text {
+		padding: 5px 10px;
+	}	
+
+	.period .period-text-hl {
+		padding: 5px 10px;
+	}	
+
+	.question p {
+		font-size: 0.6rem;
+	}
+
+	.data .data-button {
+		width: 20px;
+		height: 20px;
+	}
+
+	.description p {
+		font-size: 0.6rem;
+		line-height: 1rem;
+	}
 }

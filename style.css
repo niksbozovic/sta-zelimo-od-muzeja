@@ -197,7 +197,7 @@ body {
 .description h1{
 	font-family: "PPFractionMono";
 	color: #000;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	letter-spacing: 0em;
 	text-align: left;
 	line-height: 2rem;
@@ -208,7 +208,7 @@ body {
 .description .description-list h1{
 	font-family: "PPFractionMono";
 	color: #000;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	letter-spacing: 0em;
 	text-align: left;
 	line-height: 1rem;
@@ -229,4 +229,49 @@ body {
 
 a {
 	color: 5FEFB5;
+}
+
+@media (max-width: 800px) {
+
+  .page-number .number {
+		width: 12px;
+		height: 12px;
+		padding: 6px;
+	}
+
+	.page-number .number p {
+		font-size: 0.4rem;
+	}
+
+  .page-number .number-hl {
+		width: 12px;
+		height: 12px;
+		padding: 6px;
+	}
+
+	.page-number .number-hl p {
+		font-size: 0.4rem;
+	}
+
+	.period .period-text {
+		padding: 5px 10px;
+	}	
+
+	.period .period-text-hl {
+		padding: 5px 10px;
+	}	
+
+	.question p {
+		font-size: 0.6rem;
+	}
+
+	.data .data-button {
+		width: 20px;
+		height: 20px;
+	}
+
+	.description p {
+		font-size: 0.6rem;
+		line-height: 1rem;
+	}
 }
