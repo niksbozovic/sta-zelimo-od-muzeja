@@ -160,7 +160,7 @@ body {
 }
 
 .question p {
-	width: 30vw;
+	width: 40vw;
 	height: auto;
 	z-index: 0;
 	font-family: "PPFractionMono";
@@ -264,6 +264,7 @@ a {
 
 	.question p {
 		font-size: 0.6rem;
+		width: 30vw;
 	}
 
 	.data .data-button {

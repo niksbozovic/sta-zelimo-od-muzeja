@@ -262,6 +262,7 @@ a {
 
 	.question p {
 		font-size: 0.6rem;
+		width: 40vw;
 	}
 
 	.data .data-button {
