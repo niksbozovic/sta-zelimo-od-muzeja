@@ -7,7 +7,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: fit-content;
   width: 100vw;
   overflow-y: scroll;
   overflow-x: none;
@@ -24,7 +24,6 @@ body {
 	position: fixed;
 	top: 3vh;
 	left: 3vw;
-	z-index: 100;
 }
 
 .page-number-cont {
@@ -150,6 +149,116 @@ body {
 	position: relative;
 }
 
+.legend {
+	height: fit-content;
+	position: fixed;
+	bottom: 3vh;
+	left: 3vw;
+}
+
+.legend-cont {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	width: fit-content;
+	height: fit-content;
+	position: relative;
+}
+
+.legend-item {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.legend .legend-button {
+	border-radius: 50px;
+	width: 5px;
+	height: 5px;
+	display: grid;
+	place-items: center;
+	padding: 5px;
+}
+
+.button-red {
+	background: #EF5F5F;
+}
+.button-yellow {
+	background: #EFC95F;
+}
+.button-green {
+	background: #8FEF5F;
+}
+.button-blue {
+	background: #5FD7EF;
+}
+.button-purple {
+	background: #8A8AE3;
+}
+.button-pink {
+	background: #EF5FBA;
+}
+
+.legend .legend-button p {
+	width: fit-content;
+	height: auto;
+	z-index: 0;
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: 0.4rem;
+	letter-spacing: 0em;
+	text-align: center;
+	line-height: 0rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.legend .legend-text p {
+	width: fit-content;
+	height: auto;
+	z-index: 0;
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: 0.6rem;
+	letter-spacing: 0em;
+	text-align: center;
+	line-height: 0rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.data {
+	display: grid;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: auto;
+	margin: auto;
+}
+
+.data-cont {
+	display: grid;
+ 	grid-template-columns: repeat(6, auto);
+  	gap: 10px;
+	width: fit-content;
+	height: fit-content;
+	position: relative;
+}
+
+.data-item {
+	display: flex;
+	gap: 10px;
+}
+
+.data .data-button {
+	border-radius: 50px;
+	width: 30px;
+	height: 30px;
+	display: grid;
+	place-items: center;
+}
+
 .question {
 	height: fit-content;
 	position: fixed;
@@ -159,6 +268,7 @@ body {
 
 .question p {
 	width: 30vw;
+  text-transform: uppercase;
 	height: auto;
 	z-index: 0;
 	font-family: "PPFractionMono";
@@ -174,29 +284,26 @@ body {
 .description {
 	height: fit-content;
   width: 100vw;
-  display: grid;
   overflow-y: auto;
   box-sizing: border-box;
-  padding: 25vh 5vw 25vh 5vw;
+  padding: 10vh 0 0vh 0;
 }
 
 .description-cont {
   display: grid;
- 	grid-template-columns: repeat(2, auto);
-  gap: 2vh;
-	grid-row-gap: 0.2vh;
+  gap: 0vh;
   width: 90%;
   max-width: 40vw;
   margin: 0 auto;
   height: fit-content;
 	position: relative;
-	place-items: center;
+	place-items: left;
 }
 
 .description h1{
 	font-family: "PPFractionMono";
 	color: #000;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	letter-spacing: 0em;
 	text-align: left;
 	line-height: 2rem;
@@ -207,10 +314,10 @@ body {
 .description .description-list h1{
 	font-family: "PPFractionMono";
 	color: #000;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	letter-spacing: 0em;
 	text-align: left;
-	line-height: 2rem;
+	line-height: 1rem;
 	font-feature-settings: normal;
 	position: relative;
 }
@@ -226,11 +333,66 @@ body {
 	position: relative;
 }
 
+.answers {
+	height: fit-content;
+  width: 100vw;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 0vh 0vw 10vh 0;
+}
+
+.answers-cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 90%;
+  max-width: 40vw;
+  margin: 0 auto;
+  height: fit-content;
+	position: relative;
+	align-items: start;
+}
+
+.answers h1{
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: 1.2rem;
+	letter-spacing: 0em;
+	text-align: left;
+	line-height: 2rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.answers p{
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: .8rem;
+	letter-spacing: 0em;
+	text-align: left;
+	line-height: 2rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.answers br {
+	padding: 20px 0;
+}
+
 a {
 	color: 5FEFB5;
 }
 
 @media (max-width: 800px) {
+  .answers-cont {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .answers p {
+  	font-size: 0.6rem;
+  	line-height: 1rem;
+  }
 
   .page-number .number {
 		width: 14px;
@@ -270,6 +432,7 @@ a {
 	}
 
 	.description p {
-		font-size: 0.5rem;
+		font-size: 0.6rem;
+		line-height: 1rem;
 	}
 }
