@@ -10,7 +10,7 @@ html, body {
   height: 100vh;
   width: 100vw;
   overflow-y: scroll;
-  overflow-x: none;
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 
