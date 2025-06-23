@@ -175,16 +175,17 @@ body {
 	height: fit-content;
   width: 100vw;
   display: grid;
-  overflow-y: auto;
   box-sizing: border-box;
+  place-items: center;
+  align-items: center;
   padding: 25vh 5vw 25vh 5vw;
 }
 
 .description-cont {
   display: grid;
  	grid-template-columns: repeat(2, auto);
-  gap: 2vh;
-	grid-row-gap: 0.2vh;
+  gap: 2vw;
+	grid-row-gap: 0.1vh;
   width: 90%;
   max-width: 40vw;
   margin: 0 auto;
@@ -196,9 +197,9 @@ body {
 .description h1{
 	font-family: "PPFractionMono";
 	color: #000;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	letter-spacing: 0em;
-	text-align: left;
+	text-align: right;
 	line-height: 2rem;
 	font-feature-settings: normal;
 	position: relative;
@@ -207,7 +208,7 @@ body {
 .description .description-list h1{
 	font-family: "PPFractionMono";
 	color: #000;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	letter-spacing: 0em;
 	text-align: left;
 	line-height: 2rem;
@@ -220,7 +221,7 @@ body {
 	color: #000;
 	font-size: .8rem;
 	letter-spacing: 0em;
-	text-align: left;
+	text-align: right;
 	line-height: 2rem;
 	font-feature-settings: normal;
 	position: relative;
@@ -270,7 +271,20 @@ a {
 		height: 20px;
 	}
 
+	.description {
+		max-width: 60vw;
+	  padding: 25vh 30vw 25vh 30vw;
+	}
+
+	.description h1 {
+		font-size: 0.8rem;
+	}
+
+	.description .description-list h1 {
+		font-size: 0.8rem;
+	}
+
 	.description p {
-		font-size: 0.5rem;
+		font-size: 0.8rem;
 	}
 }
