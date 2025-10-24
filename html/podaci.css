@@ -87,7 +87,7 @@ body {
 .period {
 	height: fit-content;
 	position: fixed;
-	top: 3vh;
+	bottom: 3vh;
 	right: 3vw;
 }
 
@@ -240,7 +240,7 @@ body {
 .data-cont {
 	display: grid;
  	grid-template-columns: repeat(5, auto);
-  	gap: 10px;
+  gap: 10px;
 	width: fit-content;
 	height: fit-content;
 	position: relative;
@@ -262,7 +262,7 @@ body {
 .question {
 	height: fit-content;
 	position: fixed;
-	bottom: 3vh;
+	top: 3vh;
 	right: 3vw;
 }
 

@@ -88,7 +88,7 @@ body {
 .period {
 	height: fit-content;
 	position: fixed;
-	top: 3vh;
+	bottom: 3vh;
 	right: 3vw;
 }
 
@@ -153,7 +153,7 @@ body {
 .question {
 	height: fit-content;
 	position: fixed;
-	bottom: 3vh;
+	top: 3vh;
 	right: 3vw;
 }
 

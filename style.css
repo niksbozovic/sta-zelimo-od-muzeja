@@ -89,7 +89,7 @@ body {
 	height: fit-content;
 	position: fixed;
 	z-index: 100;
-	top: 3vh;
+	bottom: 3vh;
 	right: 3vw;
 }
 
@@ -155,7 +155,7 @@ body {
 	height: fit-content;
 	position: fixed;
 	z-index: 100;
-	bottom: 3vh;
+	top: 3vh;
 	right: 3vw;
 }
 
