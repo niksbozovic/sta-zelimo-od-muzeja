@@ -233,19 +233,20 @@ body {
 	position: relative;
 	justify-content: center;
 	align-items: center;
-	height: auto;
-	margin: 20vh 20vw;
+	height: 100vh;
+	width: auto;
+	margin: auto;
 }
 
 .youtube-cont {
-	justify-content: center;
-	align-items: center;
+	width: fit-content;
+	height: fit-content;
 	position: relative;
 }
 
 .youtube .youtube-cont iframe {
-	width: 60vw;
-	height: 60vh;
+	width: 70vw;
+	height: 70vh;
 }
 
 a {
@@ -295,5 +296,10 @@ a {
 	.description p {
 		font-size: 0.6rem;
 		line-height: 1rem;
+	}
+
+	.youtube .youtube-cont iframe {
+		width: 100vw;
+		height: fit-content;
 	}
 }
