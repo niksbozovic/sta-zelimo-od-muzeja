@@ -234,7 +234,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: auto;
-	margin: 25vh auto;
+	margin: 20vh 20vw;
 }
 
 .youtube-cont {
@@ -244,8 +244,8 @@ body {
 }
 
 .youtube .youtube-cont iframe {
-	width: 50vw;
-	height: auto;
+	width: 60vw;
+	height: 60vh;
 }
 
 a {
