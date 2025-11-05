@@ -384,7 +384,8 @@ a {
 @media (max-width: 800px) {
   .answers-cont {
     grid-template-columns: 1fr;
-    gap: 20px;
+    max-width: 60vw;
+    gap: 10px;
   }
 
   .answers p {
@@ -422,7 +423,7 @@ a {
 
 	.question p {
 		font-size: 0.6rem;
-		width: 40vw;
+		width: 50vw;
 	}
 
 	.data .data-button {
