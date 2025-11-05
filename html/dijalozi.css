@@ -245,7 +245,7 @@ body {
 
 .youtube .youtube-cont iframe {
 	width: 50vw;
-	height: 50vh;
+	height: auto;
 }
 
 a {
