@@ -188,7 +188,7 @@ body {
   display: grid;
   gap: 0vh;
   width: 90%;
-  max-width: 60vw;
+  max-width: 40vw;
   margin: 0 auto;
   height: fit-content;
 	position: relative;
@@ -291,6 +291,10 @@ a {
 	.data .data-button {
 		width: 20px;
 		height: 20px;
+	}
+
+	.description-cont {
+		max-width: 60vw;
 	}
 
 	.description p {
