@@ -50,12 +50,36 @@ body {
 	padding: 10px 20px;
 }
 
+.period .period-text:hover {
+	border-radius: 50px;
+	background: #000;
+	width: fit-content;
+	height: 20px;
+	display: grid;
+	place-items: center;
+	padding: 10px 20px;
+}
+
 .period .period-text p {
 	width: fit-content;
 	height: auto;
 	z-index: 0;
 	font-family: "PPFractionMono";
 	color: #000;
+	font-size: 0.6rem;
+	letter-spacing: 0em;
+	text-align: center;
+	line-height: 0rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.period .period-text:hover p {
+	width: fit-content;
+	height: auto;
+	z-index: 0;
+	font-family: "PPFractionMono";
+	color: #fff;
 	font-size: 0.6rem;
 	letter-spacing: 0em;
 	text-align: center;
@@ -100,7 +124,6 @@ body {
   box-sizing: border-box;
   padding: 25vh 5vw;
 }
-
 
 .description-cont {
 	border-radius: 50px;
@@ -217,7 +240,16 @@ a {
 		max-width: 60vw;
 	}
 
-	.description h1 {
+	.description-cont {
+		max-width: 60vw;
+	}
+
+	.description-cont h1 {
+		font-size: 0.85rem;
+		line-height: 1rem;
+	}
+
+	.description-cont h1:hover {
 		font-size: 0.85rem;
 		line-height: 1rem;
 	}

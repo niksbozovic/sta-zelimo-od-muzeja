@@ -36,9 +36,9 @@ body {
 	position: relative;
 }
 
-.page-number .number {
+..page-number .number:hover {
 	border-radius: 50px;
-	background: #F5F5F5;
+	background: #000;
 	width: 20px;
 	height: 20px;
 	display: grid;
@@ -52,6 +52,20 @@ body {
 	z-index: 0;
 	font-family: "PPFractionMono";
 	color: #000;
+	font-size: 0.5rem;
+	letter-spacing: 0em;
+	text-align: center;
+	line-height: 0rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.page-number .number:hover p {
+	width: fit-content;
+	height: auto;
+	z-index: 0;
+	font-family: "PPFractionMono";
+	color: #fff;
 	font-size: 0.5rem;
 	letter-spacing: 0em;
 	text-align: center;

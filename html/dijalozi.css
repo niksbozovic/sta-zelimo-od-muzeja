@@ -61,6 +61,30 @@ body {
 	position: relative;
 }
 
+.page-number .number:hover {
+	border-radius: 50px;
+	background: #fff;
+	width: 20px;
+	height: 20px;
+	display: grid;
+	place-items: center;
+	padding: 10px;
+}
+
+.page-number .number:hover p {
+	width: fit-content;
+	height: auto;
+	z-index: 0;
+	font-family: "PPFractionMono";
+	color: #000;
+	font-size: 0.5rem;
+	letter-spacing: 0em;
+	text-align: center;
+	line-height: 0rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
 .page-number .number-hl {
 	border-radius: 50px;
 	background: #fff;
@@ -119,6 +143,30 @@ body {
 	z-index: 0;
 	font-family: "PPFractionMono";
 	color: #fff;
+	font-size: 0.6rem;
+	letter-spacing: 0em;
+	text-align: center;
+	line-height: 0rem;
+	font-feature-settings: normal;
+	position: relative;
+}
+
+.period .period-text:hover {
+	border-radius: 50px;
+	background: #fff;
+	width: fit-content;
+	height: 20px;
+	display: grid;
+	place-items: center;
+	padding: 10px 20px;
+}
+
+.period .period-text:hover p {
+	width: fit-content;
+	height: auto;
+	z-index: 0;
+	font-family: "PPFractionMono";
+	color: #000;
 	font-size: 0.6rem;
 	letter-spacing: 0em;
 	text-align: center;
