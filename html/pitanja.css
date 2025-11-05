@@ -187,7 +187,7 @@ body {
   gap: 2vw;
 	grid-row-gap: 0.1vh;
   width: 90%;
-  max-width: 40vw;
+  max-width: 60vw;
   margin: 0 auto;
   height: fit-content;
 	position: relative;

@@ -188,7 +188,7 @@ body {
   display: grid;
   gap: 0vh;
   width: 90%;
-  max-width: 40vw;
+  max-width: 60vw;
   margin: 0 auto;
   height: fit-content;
 	position: relative;
