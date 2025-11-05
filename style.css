@@ -151,7 +151,7 @@ body {
 	height: auto;
 	z-index: 0;
 	font-family: "PPFractionMono";
-	color: #000;
+	color: #F5F5F5;
 	font-size: 0.6rem;
 	letter-spacing: 0em;
 	text-align: center;
@@ -191,7 +191,7 @@ body {
 	z-index: 0;
 	font-family: "PPFractionMono";
 	color: #F5F5F5;
-	font-size: 0.5rem;
+	font-size: 0.6rem;
 	letter-spacing: 0em;
 	text-align: center;
 	line-height: 0rem;

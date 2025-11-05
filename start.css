@@ -7,10 +7,9 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: fit-content;
+  height: 100vh;
   width: 100vw;
   overflow-y: scroll;
-  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -22,9 +21,8 @@ body {
 .period {
 	position: fixed;
 	top: 55vh;
+	z-index: 100;
 	display: grid;
-	align-items: center;
-	justify-content: center;
 	height: fit-content;
   width: 100vw;
 }
@@ -35,7 +33,6 @@ body {
   gap: 10px;
   width: 100vw;
   height: fit-content;
-	position: relative;
 	align-items: center;
 	justify-content: center;
 }
@@ -105,7 +102,7 @@ body {
 	z-index: 0;
 	font-family: "PPFractionMono";
 	color: #F5F5F5;
-	font-size: 0.5rem;
+	font-size: 0.6rem;
 	letter-spacing: 0em;
 	text-align: center;
 	line-height: 0rem;
