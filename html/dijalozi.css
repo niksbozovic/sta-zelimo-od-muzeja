@@ -24,12 +24,13 @@ body {
 	position: fixed;
 	top: 3vh;
 	left: 3vw;
+	z-index: 100;
 }
 
 .page-number-cont {
 	display: grid;
  	grid-template-columns: repeat(2, auto);
-  	gap: 10px;
+	gap: 10px;
 	width: fit-content;
 	height: fit-content;
 	position: relative;
@@ -87,6 +88,7 @@ body {
 .period {
 	height: fit-content;
 	position: fixed;
+	z-index: 100;
 	bottom: 3vh;
 	right: 3vw;
 }
@@ -141,134 +143,24 @@ body {
 	z-index: 0;
 	font-family: "PPFractionMono";
 	color: #F5F5F5;
-	font-size: 0.6rem;
+	font-size: 0.5rem;
 	letter-spacing: 0em;
 	text-align: center;
 	line-height: 0rem;
 	font-feature-settings: normal;
 	position: relative;
-}
-
-.legend {
-	height: fit-content;
-	position: fixed;
-	bottom: 3vh;
-	left: 3vw;
-}
-
-.legend-cont {
-	display: flex;
-	flex-direction: column;
-	gap: 5px;
-	width: fit-content;
-	height: fit-content;
-	position: relative;
-}
-
-.legend-item {
-	display: flex;
-	align-items: center;
-	gap: 5px;
-}
-
-.legend .legend-button {
-	border-radius: 50px;
-	width: 5px;
-	height: 5px;
-	display: grid;
-	place-items: center;
-	padding: 5px;
-}
-
-.button-red {
-	background: #EF5F5F;
-}
-.button-yellow {
-	background: #EFC95F;
-}
-.button-green {
-	background: #8FEF5F;
-}
-.button-blue {
-	background: #5FD7EF;
-}
-.button-purple {
-	background: #8A8AE3;
-}
-.button-pink {
-	background: #EF5FBA;
-}
-
-.legend .legend-button p {
-	width: fit-content;
-	height: auto;
-	z-index: 0;
-	font-family: "PPFractionMono";
-	color: #000;
-	font-size: 0.4rem;
-	letter-spacing: 0em;
-	text-align: center;
-	line-height: 0rem;
-	font-feature-settings: normal;
-	position: relative;
-}
-
-.legend .legend-text p {
-	width: fit-content;
-	height: auto;
-	z-index: 0;
-	font-family: "PPFractionMono";
-	color: #000;
-	font-size: 0.6rem;
-	letter-spacing: 0em;
-	text-align: center;
-	line-height: 0rem;
-	font-feature-settings: normal;
-	position: relative;
-}
-
-.data {
-	display: grid;
-	position: relative;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	width: auto;
-	margin: auto;
-}
-
-.data-cont {
-	display: grid;
- 	grid-template-columns: repeat(6, auto);
-  	gap: 10px;
-	width: fit-content;
-	height: fit-content;
-	position: relative;
-}
-
-.data-item {
-	display: flex;
-	gap: 10px;
-}
-
-.data .data-button {
-	border-radius: 50px;
-	width: 30px;
-	height: 30px;
-	display: grid;
-	place-items: center;
 }
 
 .question {
 	height: fit-content;
 	position: fixed;
+	z-index: 100;
 	top: 3vh;
 	right: 3vw;
 }
 
 .question p {
-	width: 30vw;
-  text-transform: uppercase;
+	width: 40vw;
 	height: auto;
 	z-index: 0;
 	font-family: "PPFractionMono";
@@ -282,11 +174,15 @@ body {
 }
 
 .description {
+  position: relative;
 	height: fit-content;
   width: 100vw;
+  display: grid;
+  overflow-y: auto;
   box-sizing: border-box;
-  padding: 10vh 0 0vh 0;
+  padding: 20vh 5vw 20vh 5vw;
 }
+
 
 .description-cont {
   display: grid;
@@ -332,49 +228,24 @@ body {
 	position: relative;
 }
 
-.answers {
-	height: fit-content;
-  width: 100vw;
-  box-sizing: border-box;
-  padding: 0vh 0vw 10vh 0;
-}
-
-.answers-cont {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  width: 90%;
-  max-width: 40vw;
-  margin: 0 auto;
-  height: fit-content;
+.youtube {
+	display: grid;
 	position: relative;
-	align-items: start;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	margin: 25vh auto;
 }
 
-.answers h1{
-	font-family: "PPFractionMono";
-	color: #000;
-	font-size: 1.2rem;
-	letter-spacing: 0em;
-	text-align: left;
-	line-height: 2rem;
-	font-feature-settings: normal;
+.youtube-cont {
+	justify-content: center;
+	align-items: center;
 	position: relative;
 }
 
-.answers p{
-	font-family: "PPFractionMono";
-	color: #000;
-	font-size: .8rem;
-	letter-spacing: 0em;
-	text-align: left;
-	line-height: 2rem;
-	font-feature-settings: normal;
-	position: relative;
-}
-
-.answers br {
-	padding: 20px 0;
+.youtube .youtube-cont iframe {
+	width: 50vw;
+	height: 50vh;
 }
 
 a {
@@ -382,15 +253,6 @@ a {
 }
 
 @media (max-width: 800px) {
-  .answers-cont {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .answers p {
-  	font-size: 0.6rem;
-  	line-height: 1rem;
-  }
 
   .page-number .number {
 		width: 14px;
@@ -422,7 +284,7 @@ a {
 
 	.question p {
 		font-size: 0.6rem;
-		width: 40vw;
+		width: 30vw;
 	}
 
 	.data .data-button {

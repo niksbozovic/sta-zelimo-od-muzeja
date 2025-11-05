@@ -95,7 +95,7 @@ body {
 
 .period-cont {
 	display: grid;
- 	grid-template-columns: repeat(3, auto);
+ 	grid-template-columns: repeat(2, auto);
   	gap: 10px;
 	width: fit-content;
 	height: fit-content;
