@@ -24,7 +24,6 @@ body {
 	position: fixed;
 	top: 3vh;
 	left: 3vw;
-	z-index: 100;
 }
 
 .page-number-cont {
@@ -34,6 +33,16 @@ body {
 	width: fit-content;
 	height: fit-content;
 	position: relative;
+}
+
+.page-number .number {
+	border-radius: 50px;
+	background: #F5F5F5;
+	width: 20px;
+	height: 20px;
+	display: grid;
+	place-items: center;
+	padding: 10px;
 }
 
 .page-number .number:hover {
@@ -80,7 +89,6 @@ body {
 	width: 20px;
 	height: 20px;
 	display: grid;
-	gap: 4px;
 	place-items: center;
 	padding: 10px;
 }
@@ -125,12 +133,12 @@ body {
 	padding: 10px 20px;
 }
 
-.period .period-text p {
+.period .period-text:hover p {
 	width: fit-content;
 	height: auto;
 	z-index: 0;
 	font-family: "PPFractionMono";
-	color: #000;
+	color: #fff;
 	font-size: 0.6rem;
 	letter-spacing: 0em;
 	text-align: center;
@@ -154,7 +162,7 @@ body {
 	height: auto;
 	z-index: 0;
 	font-family: "PPFractionMono";
-	color: #F5F5F5;
+	color: #000;
 	font-size: 0.6rem;
 	letter-spacing: 0em;
 	text-align: center;
